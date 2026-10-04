@@ -40,7 +40,7 @@ Physical microphones, real iOS Safari/Android Chrome, sustained-network failure 
 
 Live phoneme timing is estimated inside aligned words using dictionary pronunciation; ElevenLabs provides character timing, not native phoneme or viseme events. Preview timing comes from offline analysis of the actual recordings. No claim of measured lip-sync error is made.
 
-The ElevenLabs agent is created and connected for local testing. GitHub, Netlify and Cloudflare hosting have not been published.
+The initial validation above was local. The later production release is recorded below; physical-device checks listed here remain pending.
 
 ## Wardrobe validation
 

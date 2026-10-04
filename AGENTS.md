@@ -83,7 +83,7 @@ Distinguish inspection from mutations and paid generation:
 
 Run these actions only within the user's authorized task scope. Keep secrets in ignored files or provider secret stores and avoid printing them. After an unknown creation outcome, inspect state before retrying.
 
-Production targets the portfolio origin `https://tesselpunt.com` and the planned API domain `api.tesselpunt.com`. Do not deploy the local environment. Do not assume production Turnstile, secrets, domain routing or bindings are configured because local development succeeds.
+Production targets the portfolio origin `https://tesselpunt.com` and the API domain `api.tesselpunt.com`. Do not deploy the local environment. Do not assume production Turnstile, secrets, domain routing or bindings are configured because local development succeeds.
 
 Keep GitHub deployment gated by `WORKER_DEPLOY_ENABLED` until production readiness is verified. Pushing source, publishing shared types, deploying the Worker and wiring the portfolio are distinct operations; perform them when included in the task, and report their actual status separately.
 

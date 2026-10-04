@@ -1,4 +1,5 @@
 import { assetUrl } from './assetUrl';
+import { voiceAudioOptions } from './voiceAudio';
 import {
   useCallback,
   useEffect,
@@ -275,6 +276,7 @@ export function CharacterExperience() {
       speech.current.startSession(dictionary);
       const previous = historyRef.current[who.id] ?? [];
       const c = await Conversation.startSession({
+        ...voiceAudioOptions,
         signedUrl: session.signedUrl,
         textOnly: typed,
         overrides: {

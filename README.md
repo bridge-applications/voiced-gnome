@@ -2,6 +2,8 @@
 
 An interactive garden of 18 animated characters, built with React, TypeScript, Spine 4.3, PixiJS 8 and ElevenLabs. Select a character, hear their recorded introduction, type a question or speak with them. Each has a distinct outfit, fictional backstory and a stock voice. Agent tools trigger validated expressions and emotes; speech drives the mouth through timestamped visemes.
 
+[Try the live demo](https://tesselpunt.com/projects/voiced-gnome) · [Shared types 0.1.0](https://github.com/bridge-applications/voiced-gnome/pkgs/npm/voiced-gnome-types)
+
 ## Run locally
 
 Use Node 22.12 or later. Put `ELEVENLABS_API_KEY` in the root `.env` for local testing; never use a `VITE_*` variable for secrets. Then run:

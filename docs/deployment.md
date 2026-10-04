@@ -49,4 +49,13 @@ The client supports `GNOME_BASE_PATH=/interactive/voiced-gnome/` and `VITE_API_B
 
 The portfolio's Permissions Policy must allow `microphone=(self)`; the gnome iframe explicitly requests `microphone; autoplay`. Other existing demos do not receive microphone delegation. Microphone access is still requested only after **Speak**. The demo's own CSP permits Turnstile scripts/frames, WebAssembly, media and provider connections. No additional Netlify site is required.
 
-Current preparation is local: production widget/secrets, Worker deployment, GitHub source/package publication and portfolio deployment have not been completed by these instructions. Verify their actual state before marking a launch complete.
+## Current production release — 4 October 2026
+
+- Public source: [bridge-applications/voiced-gnome](https://github.com/bridge-applications/voiced-gnome).
+- Public package: [@bridge-applications/voiced-gnome-types@0.1.0](https://github.com/bridge-applications/voiced-gnome/pkgs/npm/voiced-gnome-types). Check and Publish types workflows passed. The organization restriction on creating public packages was temporarily enabled with approval, then restored after this package became public.
+- API: `voiced-gnome-worker` at `https://api.tesselpunt.com`, with the initial SQLite migration and all three production secrets stored in Cloudflare. The managed Turnstile widget is limited to `tesselpunt.com`.
+- Portfolio: [project and embedded demo](https://tesselpunt.com/projects/voiced-gnome), deployed through the existing Netlify site's GitHub integration. Its static snapshot is rebuilt through `npm run build:gnome`; changing monorepo source alone does not update that snapshot.
+
+The character renderer imports Pixi's CSP-compatible handlers (`pixi.js/unsafe-eval`); the site does not grant JavaScript `unsafe-eval`. The trusted same-origin iframe allows scripts, same-origin access and forms for the React submit handler. Its sandbox is a functional restriction, not an isolation boundary for untrusted content.
+
+Automatic Worker deployment remains disabled. A manual release used the authenticated Wrangler session without storing a permanent Cloudflare token in GitHub. Future package versions can use the existing Publish types workflow; first publication of a different public package may need the organization's public-creation policy handled separately. See [release checklist](release-checklist.md) and [validation evidence](validation.md) for checks and remaining device coverage.
