@@ -11,7 +11,7 @@ Production publication completed on 4 October 2026. The checked items below reco
 - [x] Deploy `voiced-gnome-worker` with its SQLite migration and custom domain `api.tesselpunt.com`; confirm no unrelated DNS record is replaced.
 - [x] Check production configuration, CORS, unverified request rejection and retired-route 404s without paid generation.
 - [x] Deploy the reviewed portfolio snapshot and project page; check the actual response headers for microphone delegation and CSP.
-- [ ] Perform a real Turnstile check and one bounded typed/spoken interaction; confirm cancellation, introductions and character switching. Device microphone tests remain separate.
+- [x] Perform a real Turnstile check and one bounded typed/spoken interaction; confirm cancellation, introductions and character switching. Device microphone tests remain separate.
 
 Automatic Worker deployment remains disabled until a suitably scoped Cloudflare token is stored in GitHub's production environment and `WORKER_DEPLOY_ENABLED=true` is deliberately configured. An initial manual deployment does not require a new permanent token in GitHub.
 
