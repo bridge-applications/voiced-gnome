@@ -1,6 +1,6 @@
 {
   "provider": "ElevenLabs",
-  "model_id": "eleven_v4_turbo",
+  "model_id": "eleven_v4",
   "voice_settings": {
     "stability": 0.5
   },

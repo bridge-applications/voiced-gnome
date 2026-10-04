@@ -159,6 +159,7 @@ async function generate(id) {
       characterId: id,
       text: clip.text,
       voiceId: character.voiceId,
+      modelId: metadata.model_id,
       sourceHash,
       duration: timing.metadata.duration,
       beats,

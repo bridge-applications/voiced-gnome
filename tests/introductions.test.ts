@@ -7,6 +7,13 @@ import {
 } from '../apps/client/src/introduction';
 import { cueAt, parseMouthCues } from '../apps/client/src/gnome/speech';
 
+const generation = JSON.parse(
+  readFileSync(
+    new URL('../docs/character-introductions.json', import.meta.url),
+    'utf8',
+  ),
+);
+
 describe('recorded character introductions', () => {
   it('includes playable, voice-matched audio and valid mouth/gesture timing for every character', () => {
     const base = new URL(
@@ -19,6 +26,7 @@ describe('recorded character introductions', () => {
       );
       const data = introductionData(raw, character.id);
       expect(raw.voiceId, character.name).toBe(character.voiceId);
+      expect(raw.modelId, character.name).toBe(generation.model_id);
       expect(data.duration).toBeGreaterThan(8);
       expect(data.beats.length).toBe(2);
       const cues = parseMouthCues(raw);
