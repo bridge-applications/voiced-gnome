@@ -1,0 +1,12 @@
+pebbler_gnome-pants-pants_010-0.png
+size:1090,380
+filter:Linear,Linear
+pma:true
+equipment/pants/pants_010/pants_010
+bounds:2,2,542,376
+offsets:0,0,542,376
+index:0
+equipment/pants/pants_010/pants_010_belt
+bounds:546,2,542,376
+offsets:0,0,542,376
+index:0

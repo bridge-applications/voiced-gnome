@@ -1,0 +1,48 @@
+{
+  "name": "voiced-gnome",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "engines": {
+    "node": ">=22.12"
+  },
+  "scripts": {
+    "dev": "npm run dev --workspace @voiced-gnome/client",
+    "dev:worker": "node scripts/dev-worker.mjs",
+    "build": "npm run build --workspace @bridge-applications/voiced-gnome-types && npm run build --workspace @voiced-gnome/client",
+    "typecheck": "npm run build --workspace @bridge-applications/voiced-gnome-types && npm run typecheck --workspaces --if-present",
+    "test": "vitest run",
+    "check": "npm run typecheck && npm test && npm run build",
+    "preview": "npm run preview --workspace @voiced-gnome/client",
+    "worker:types": "npm run types --workspace @voiced-gnome/worker",
+    "worker:dry-run": "npm run dry-run --workspace @voiced-gnome/worker",
+    "agent:create": "node scripts/create-agent.mjs",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "preview:cues": "node scripts/generate-preview-cues.mjs",
+    "agent:update": "node scripts/update-agent.mjs",
+    "preview:audio": "node scripts/generate-preview-audio.mjs",
+    "story:agents": "node scripts/setup-story-agents.mjs",
+    "characters:agent": "node scripts/setup-character-agent.mjs",
+    "characters:introductions": "node scripts/generate-character-introductions.mjs",
+    "agent:security": "node scripts/harden-character-agent.mjs",
+    "types:pack": "mkdir -p output && npm pack --workspace @bridge-applications/voiced-gnome-types --pack-destination output",
+    "types:check": "node scripts/check-types-package.mjs",
+    "predev": "npm run build --workspace @bridge-applications/voiced-gnome-types",
+    "predev:worker": "npm run build --workspace @bridge-applications/voiced-gnome-types"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.10",
+    "esbuild": "^0.28.2",
+    "miniflare": "5.20261001.0-alpha",
+    "prettier": "^3.9.9",
+    "rollup": "^4.64.0",
+    "rollup-plugin-dts": "^6.5.1",
+    "typescript": "~5.8.3",
+    "vitest": "^3.2.4"
+  }
+}

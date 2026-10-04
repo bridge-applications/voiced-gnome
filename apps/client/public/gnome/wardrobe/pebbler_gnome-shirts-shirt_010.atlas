@@ -1,0 +1,9 @@
+pebbler_gnome-shirts-shirt_010-0.png
+size:263,584
+filter:Linear,Linear
+pma:true
+equipment/shirts/shirt_010/shirt_010_torso
+bounds:2,2,580,259
+offsets:0,0,580,259
+rotate:90
+index:0

@@ -1,0 +1,11 @@
+apps/client/public/gnome/gnome.json
+apps/worker/worker-configuration.d.ts
+apps/worker/dist/
+apps/client/dist/
+node_modules/
+output/
+.playwright-cli/
+assets/
+apps/client/public/speech/english-visemes.json
+
+apps/client/public/gnome/wardrobe/*.json

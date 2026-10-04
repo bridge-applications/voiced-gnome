@@ -1,0 +1,40 @@
+{
+  "provider": "ElevenLabs",
+  "model_id": "eleven_v4_turbo",
+  "voice_id": "JBFqnCBsd6RMkjVDRZzb",
+  "voice_name": "George - Warm, Captivating Storyteller",
+  "generated_on": "2026-10-03",
+  "scripted": true,
+  "clips": {
+    "hello": {
+      "file": "/preview/hello.mp3",
+      "text": "Hello there! I\u2019m a little gnome with a rather large wardrobe. Fancy choosing my next look?"
+    },
+    "wave": {
+      "file": "/preview/wave.mp3",
+      "text": "A wave? Absolutely! Hello, you magnificent human. This is my very best greeting."
+    },
+    "story": {
+      "file": "/preview/story.mp3",
+      "text": "I once tried to grow a garden on my hat. The carrots were wonderful, but the watering was a little awkward."
+    },
+    "wardrobe": {
+      "file": "/preview/wardrobe.mp3",
+      "text": "I have a rather large wardrobe! Fancy a different hat, or a whole new look? Start a conversation and tell me what style to try."
+    },
+    "name": {
+      "file": "/preview/name.mp3",
+      "text": "Lovely choice! What should we call the main character?"
+    }
+  },
+  "lip_sync": {
+    "tool": "Rhubarb 1.14.0",
+    "recognizer": "pocketSphinx",
+    "extended_shapes": "GHX",
+    "analysis": "actual shipped audio, dialogue hint supplied",
+    "regenerate": "npm run preview:cues"
+  },
+  "voice_settings": {
+    "stability": 0.5
+  }
+}

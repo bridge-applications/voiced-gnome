@@ -1,0 +1,29 @@
+{
+  "name": "@voiced-gnome/client",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5184",
+    "build": "tsc --noEmit && vite build",
+    "typecheck": "tsc --noEmit",
+    "preview": "vite preview --host 127.0.0.1 --port 4184"
+  },
+  "dependencies": {
+    "@elevenlabs/react": "1.16.0",
+    "@esotericsoftware/spine-pixi-v8": "~4.3.13",
+    "@fontsource-variable/dm-sans": "^5.3.0",
+    "@fontsource-variable/manrope": "^5.3.0",
+    "@bridge-applications/voiced-gnome-types": "*",
+    "lucide-react": "^0.468.0",
+    "pixi.js": "^8.19.0",
+    "react": "^19.2.1",
+    "react-dom": "^19.2.1"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.2",
+    "vite": "^7.3.0"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "rest": {
+    "width": 281,
+    "height": 55
+  },
+  "pressed": {
+    "width": 285,
+    "height": 18
+  },
+  "teeth": {
+    "width": 309,
+    "height": 101
+  },
+  "mid": {
+    "width": 316,
+    "height": 163
+  },
+  "wide": {
+    "width": 336,
+    "height": 235
+  },
+  "round": {
+    "width": 246,
+    "height": 226
+  },
+  "pucker": {
+    "width": 127,
+    "height": 172
+  },
+  "tongue": {
+    "width": 304,
+    "height": 161
+  },
+  "fv": {
+    "width": 1116,
+    "height": 294
+  }
+}

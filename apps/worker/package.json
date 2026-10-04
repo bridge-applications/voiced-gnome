@@ -1,0 +1,20 @@
+{
+  "name": "@voiced-gnome/worker",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev --port 8787",
+    "typecheck": "tsc --noEmit",
+    "types": "wrangler types --strict-vars=false",
+    "deploy": "wrangler deploy --env \"\"",
+    "dry-run": "wrangler deploy --env \"\" --dry-run --outdir dist"
+  },
+  "dependencies": {
+    "@bridge-applications/voiced-gnome-types": "*"
+  },
+  "devDependencies": {
+    "wrangler": "^4.147.0",
+    "@cloudflare/workers-types": "latest"
+  }
+}

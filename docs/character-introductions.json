@@ -1,0 +1,243 @@
+{
+  "provider": "ElevenLabs",
+  "model_id": "eleven_v4_turbo",
+  "voice_settings": {
+    "stability": 0.5
+  },
+  "clips": {
+    "pip": {
+      "text": "Ahoy! I'm the Pirate, captain of the Sea Sprite. I'm searching for an island that disappears at sunrise. I collect peculiar maps, enjoy a good riddle, and prefer to avoid seagulls. Ask me about my latest adventure!",
+      "beats": [
+        {
+          "anchor": "Ahoy!",
+          "gesture": "wave"
+        },
+        {
+          "anchor": "prefer to avoid seagulls",
+          "gesture": "awkward"
+        }
+      ]
+    },
+    "ember": {
+      "text": "Hello! I'm the Dragon, and I'm dreaming of opening a marshmallow cafe beneath my mossy hill. There's just one small problem: my fire sometimes makes bubbles instead of flames. I think kindness is braver than roaring. What would you put on my menu?",
+      "beats": [
+        {
+          "anchor": "Hello!",
+          "gesture": "celebrate"
+        },
+        {
+          "anchor": "my fire sometimes makes bubbles",
+          "gesture": "shrug"
+        }
+      ]
+    },
+    "bramble": {
+      "text": "Welcome! I'm the Chef. I left the royal kitchen to search for the perfect soup, and a good story is my favourite ingredient. I once cooked dinner for a very fussy octopus. Ask me about my strangest recipe, or help me invent a new one!",
+      "beats": [
+        {
+          "anchor": "Welcome!",
+          "gesture": "bow"
+        },
+        {
+          "anchor": "a very fussy octopus",
+          "gesture": "ta_da"
+        }
+      ]
+    },
+    "moss": {
+      "text": "Hello there! I'm the Gardener. Every flower in my garden remembers someone who visited. I once planted a tree on my hat, which seemed sensible until the watering began. I like tea, beetles, and good questions. Shall I tell you what the flowers have been saying?",
+      "beats": [
+        {
+          "anchor": "Hello there!",
+          "gesture": "wave"
+        },
+        {
+          "anchor": "planted a tree on my hat",
+          "gesture": "awkward"
+        }
+      ]
+    },
+    "hugo": {
+      "text": "Hey there! I'm the Batter, playing for the Acorn All-Stars in our little flowerpot stadium. One day, I'll hit a ball beyond the rainbow. Until then, I help my teammates feel brave and keep a lucky leaf in my cap. Want to hear about our biggest game?",
+      "beats": [
+        {
+          "anchor": "Hey there!",
+          "gesture": "victory_pump"
+        },
+        {
+          "anchor": "hit a ball beyond the rainbow",
+          "gesture": "victory_pump"
+        }
+      ]
+    },
+    "nori": {
+      "text": "Hello! I'm the Postie. I deliver letters across the garden, even when the snails go on strike. There's one envelope I haven't delivered yet: it's addressed to the moon. I'm determined to find a way. Would you like to help me solve that little delivery problem?",
+      "beats": [
+        {
+          "anchor": "Hello!",
+          "gesture": "wave"
+        },
+        {
+          "anchor": "addressed to the moon",
+          "gesture": "shrug"
+        }
+      ]
+    },
+    "bolt": {
+      "text": "Good to meet you! I'm the Engineer. I look after a tiny offshore platform and a lighthouse powered by bottled sunshine. My toolbox is small, but every spanner has an important job. I always double-check my work. Ask me how the lighthouse works, or bring me a puzzle!",
+      "beats": [
+        {
+          "anchor": "Good to meet you!",
+          "gesture": "nailed_it"
+        },
+        {
+          "anchor": "I always double-check my work",
+          "gesture": "nailed_it"
+        }
+      ]
+    },
+    "saffron": {
+      "text": "Welcome to my fields! I'm the Farmer, growing figs and grain beside an ancient river. Every flood leaves a new mystery behind. My stubborn ibis thinks he's in charge, but we get along. Ask me what the river brought this season, or tell me what you'd like to grow!",
+      "beats": [
+        {
+          "anchor": "Welcome to my fields!",
+          "gesture": "bow"
+        },
+        {
+          "anchor": "My stubborn ibis thinks",
+          "gesture": "shrug"
+        }
+      ]
+    },
+    "tarek": {
+      "text": "Greetings! I'm the Guardian. The tomb I watch over is full of puzzles rather than gold. A good question will always earn you a welcome, especially if you've brought custard biscuits. This headdress is heavier than it looks. Would you like to try one of my riddles?",
+      "beats": [
+        {
+          "anchor": "Greetings!",
+          "gesture": "onwards"
+        },
+        {
+          "anchor": "This headdress is heavier",
+          "gesture": "awkward"
+        }
+      ]
+    },
+    "archie": {
+      "text": "A pleasure to meet you! I'm the Royal, ruler of a kingdom no bigger than a picnic blanket. I'm learning to be fair, although my wig keeps attracting butterflies during speeches. I'd rather make a friend than hold a grand ceremony. What would you change in my little kingdom?",
+      "beats": [
+        {
+          "anchor": "A pleasure to meet you!",
+          "gesture": "bow"
+        },
+        {
+          "anchor": "my wig keeps attracting butterflies",
+          "gesture": "shrug"
+        }
+      ]
+    },
+    "ada": {
+      "text": "Welcome aboard! I'm the Captain. I sail between the sea and the night sky, following a compass that points towards unanswered questions. My logbook is full of strange constellations. Someday I'll discover what lies beyond the last star. Which mystery would you like to explore together?",
+      "beats": [
+        {
+          "anchor": "Welcome aboard!",
+          "gesture": "onwards"
+        },
+        {
+          "anchor": "Someday I'll discover",
+          "gesture": "onwards"
+        }
+      ]
+    },
+    "wren": {
+      "text": "Come and warm your hands! I'm the Traveller. I cross snowy mountains, trading stories for hot chocolate in the cabins along the way. My scarf is knitted from memories, and I never forget a friendly face. Would you like a tale from the mountains, or shall we imagine our next journey?",
+      "beats": [
+        {
+          "anchor": "Come and warm your hands!",
+          "gesture": "celebrate"
+        },
+        {
+          "anchor": "My scarf is knitted from memories",
+          "gesture": "bow"
+        }
+      ]
+    },
+    "clover": {
+      "text": "Hello there! I'm the Lemonade Seller. My stand is by the garden gate, and I'm inventing a drink that tastes like sunshine after rain. The neighbours love my experiments, although one frog was rather surprised. What secret ingredient would you try? I'm always ready for a bright idea!",
+      "beats": [
+        {
+          "anchor": "Hello there!",
+          "gesture": "ta_da"
+        },
+        {
+          "anchor": "one frog was rather surprised",
+          "gesture": "ta_da"
+        }
+      ]
+    },
+    "flint": {
+      "text": "Good to see you! I'm the Builder. I make bridges over puddles for beetles and mice. My hardest job is connecting two neighbours who stopped speaking to each other. A sturdy bridge needs good listening as well as good tools. Have you got a building challenge for me?",
+      "beats": [
+        {
+          "anchor": "Good to see you!",
+          "gesture": "nailed_it"
+        },
+        {
+          "anchor": "A sturdy bridge needs good listening",
+          "gesture": "nailed_it"
+        }
+      ]
+    },
+    "olive": {
+      "text": "Hello, curious visitor! I'm the Scholar. My library lives inside a hollow tree, and one of its books writes a new page whenever someone asks a sincere question. I suspect it's a little mischievous. What have you always wondered about? Let's see what the book has to say!",
+      "beats": [
+        {
+          "anchor": "Hello, curious visitor!",
+          "gesture": "shrug"
+        },
+        {
+          "anchor": "I suspect it's a little mischievous",
+          "gesture": "buffering_bot"
+        }
+      ]
+    },
+    "rufus": {
+      "text": "Ahoy, friend! I'm the Deckhand, keeping a very untidy ship looking almost respectable. A sea monster borrowed my favourite mop and still hasn't returned it. I enjoy a tall tale, but I'll admit when I'm adding a little extra sparkle. Want to hear how I met that monster?",
+      "beats": [
+        {
+          "anchor": "Ahoy, friend!",
+          "gesture": "shrug"
+        },
+        {
+          "anchor": "still hasn't returned it",
+          "gesture": "shrug"
+        }
+      ]
+    },
+    "quill": {
+      "text": "Oh, hello! I'm the Inventor. I'm building a machine that finds ideas people have forgotten. It works beautifully, except when it returns somebody else's shopping list. My shed is full of springs, sketches, and possibilities. What would you invent if anything were possible?",
+      "beats": [
+        {
+          "anchor": "Oh, hello!",
+          "gesture": "buffering_bot"
+        },
+        {
+          "anchor": "somebody else's shopping list",
+          "gesture": "buffering_bot"
+        }
+      ]
+    },
+    "reed": {
+      "text": "Hello, adventurer! I'm the Ranger. I look after a forest where the trails swap places after sunset. Friendly owls help me map the changes and guide visitors safely home. I believe every walk can hold a little adventure. Would you like a forest story, or a few tips for exploring?",
+      "beats": [
+        {
+          "anchor": "Hello, adventurer!",
+          "gesture": "wave"
+        },
+        {
+          "anchor": "every walk can hold a little adventure",
+          "gesture": "onwards"
+        }
+      ]
+    }
+  }
+}

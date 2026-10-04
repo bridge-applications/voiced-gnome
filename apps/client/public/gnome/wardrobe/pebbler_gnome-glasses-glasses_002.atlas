@@ -1,0 +1,12 @@
+pebbler_gnome-glasses-glasses_002-0.png
+size:858,359
+filter:Linear,Linear
+pma:true
+equipment/glasses/glasses_002/glasses_002
+bounds:2,2,426,355
+offsets:0,0,426,355
+index:0
+equipment/glasses/glasses_002/glasses_002_strap
+bounds:430,2,426,355
+offsets:0,0,426,355
+index:0

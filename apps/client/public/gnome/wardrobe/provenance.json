@@ -1,0 +1,7 @@
+{
+  "source": "Pebbler gnome checkpoint-24 clothing packs",
+  "spineVersion": "4.3.26",
+  "pieces": 46,
+  "originalSourceHash": "bf0b5243dc854d742d58d17d80f44b12489d57d92668eb6a119a32b92c79d29a",
+  "import": "Skin attachments copied unchanged; rig and slots use voiced-gnome names/indices; required gaze slider animations included; all original atlas texture pages copied unchanged."
+}

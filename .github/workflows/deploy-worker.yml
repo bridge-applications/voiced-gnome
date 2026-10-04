@@ -1,0 +1,37 @@
+name: Deploy Worker
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'apps/worker/**'
+      - 'packages/types/**'
+      - 'package.json'
+      - 'package-lock.json'
+      - 'tsconfig.base.json'
+      - '.github/workflows/deploy-worker.yml'
+permissions:
+  contents: read
+concurrency:
+  group: voiced-gnome-worker-production
+  cancel-in-progress: false
+jobs:
+  deploy:
+    # Enable the repository variable after account secrets and origins are set.
+    if: vars.WORKER_DEPLOY_ENABLED == 'true'
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run check
+      - run: npm run format:check
+      - run: npm run worker:dry-run
+      - run: npm run deploy --workspace @voiced-gnome/worker
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}

@@ -1,0 +1,12 @@
+pebbler_gnome-footwear-footwear_008-0.png
+size:690,184
+filter:Linear,Linear
+pma:true
+equipment/footwear/footwear_008/footwear_008_l_foot
+bounds:2,2,342,180
+offsets:0,0,342,180
+index:0
+equipment/footwear/footwear_008/footwear_008_r_foot
+bounds:346,2,342,180
+offsets:0,0,342,180
+index:0

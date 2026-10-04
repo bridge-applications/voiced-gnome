@@ -1,0 +1,17 @@
+pebbler_gnome-shirts-shirt_013-0.png
+size:1047,542
+filter:Linear,Linear
+pma:true
+equipment/shirts/shirt_013/shirt_013_torso
+bounds:2,2,538,521
+offsets:0,0,538,521
+rotate:90
+index:0
+equipment/shirts/shirt_013/shirt_013_l_sleeve_upper
+bounds:525,2,259,234
+offsets:0,0,259,234
+index:0
+equipment/shirts/shirt_013/shirt_013_r_sleeve_upper
+bounds:786,2,259,234
+offsets:0,0,259,234
+index:0

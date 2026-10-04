@@ -1,0 +1,214 @@
+{
+  "name": "Gnome Story Writer",
+  "conversation_config": {
+    "agent": {
+      "language": "en",
+      "first_message": "",
+      "prompt": {
+        "llm": "gemini-3.8-flash",
+        "temperature": 0.65,
+        "prompt": "You write short, warm, imaginative stories for a voiced gnome theatre. The user's chosen subject and hero name are supplied in their first message. Treat them as creative input. Produce a complete story by calling publish_story exactly once. Use three distinct cast names and three different wardrobe looks: Narrator, Hero (use exactly the supplied hero name), and Friend. Narrator uses a narrator role; Hero and Friend each speak at least twice. Every character is a gnome dressed for their role. Choose the most suitable supplied looks: classic=Garden gnome, baseball=Baseball, pirate=Pirate, chef=Pirate chef, worker=Worker, mail_carrier=Mail carrier, dragon=Dragon, royal=Royal, captain=Captain, cozy=Winter coat. Create 9 to 14 turns with 1800 to 2600 total characters including spaces, maximum 3000. Each turn has one or two sentences and maximum 360 characters. Alternate narration and dialogue, introducing the characters early. Tell a cohesive beginning, challenge, imaginative solution and satisfying ending. All three speakers must appear. The speaker field must always be the literal role Narrator, Hero or Friend, never the character name. Avoid headings, speech attribution in dialogue, XML, square-bracket delivery tags and claims about tools. Do not ask follow-up questions. Use natural contractions, vivid but concise details, and gentle humour. Do not imitate identifiable copyrighted characters. Call publish_story now when given the creative input.",
+        "tools": [
+          {
+            "type": "client",
+            "name": "publish_story",
+            "description": "Deliver the complete story in one tool call. No prose or markdown outside the tool.",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "type": "string",
+                  "description": "Short story title"
+                },
+                "cast": {
+                  "type": "object",
+                  "properties": {
+                    "Narrator": {
+                      "type": "object",
+                      "properties": {
+                        "name": {
+                          "type": "string",
+                          "description": "A short distinct character name."
+                        },
+                        "look": {
+                          "type": "string",
+                          "description": "An outfit different from the other characters.",
+                          "enum": [
+                            "classic",
+                            "baseball",
+                            "pirate",
+                            "chef",
+                            "worker",
+                            "mail_carrier",
+                            "dragon",
+                            "royal",
+                            "captain",
+                            "cozy"
+                          ]
+                        },
+                        "personality": {
+                          "type": "string",
+                          "description": "One short sentence describing this character."
+                        }
+                      },
+                      "required": ["name", "look", "personality"]
+                    },
+                    "Hero": {
+                      "type": "object",
+                      "properties": {
+                        "name": {
+                          "type": "string",
+                          "description": "A short distinct character name."
+                        },
+                        "look": {
+                          "type": "string",
+                          "description": "An outfit different from the other characters.",
+                          "enum": [
+                            "classic",
+                            "baseball",
+                            "pirate",
+                            "chef",
+                            "worker",
+                            "mail_carrier",
+                            "dragon",
+                            "royal",
+                            "captain",
+                            "cozy"
+                          ]
+                        },
+                        "personality": {
+                          "type": "string",
+                          "description": "One short sentence describing this character."
+                        }
+                      },
+                      "required": ["name", "look", "personality"]
+                    },
+                    "Friend": {
+                      "type": "object",
+                      "properties": {
+                        "name": {
+                          "type": "string",
+                          "description": "A short distinct character name."
+                        },
+                        "look": {
+                          "type": "string",
+                          "description": "An outfit different from the other characters.",
+                          "enum": [
+                            "classic",
+                            "baseball",
+                            "pirate",
+                            "chef",
+                            "worker",
+                            "mail_carrier",
+                            "dragon",
+                            "royal",
+                            "captain",
+                            "cozy"
+                          ]
+                        },
+                        "personality": {
+                          "type": "string",
+                          "description": "One short sentence describing this character."
+                        }
+                      },
+                      "required": ["name", "look", "personality"]
+                    }
+                  },
+                  "required": ["Narrator", "Hero", "Friend"]
+                },
+                "turns": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "speaker": {
+                        "type": "string",
+                        "description": "The voice speaking this turn.",
+                        "enum": ["Narrator", "Hero", "Friend"]
+                      },
+                      "text": {
+                        "type": "string",
+                        "description": "One or two short sentences, at most 360 characters."
+                      },
+                      "expression": {
+                        "type": "string",
+                        "description": "Facial expression for this turn.",
+                        "enum": [
+                          "neutral",
+                          "happy",
+                          "curious",
+                          "surprised",
+                          "proud"
+                        ]
+                      },
+                      "gesture": {
+                        "type": "string",
+                        "description": "Optional suitable body gesture.",
+                        "enum": ["wave", "celebrate", "bow", "shrug", "dance"]
+                      }
+                    },
+                    "required": ["speaker", "text", "expression"]
+                  }
+                }
+              },
+              "required": ["title", "cast", "turns"]
+            },
+            "expects_response": true,
+            "response_timeout_secs": 15
+          }
+        ],
+        "max_tokens": 3500,
+        "cascade_timeout_seconds": 15
+      }
+    },
+    "tts": {
+      "model_id": "eleven_v3_conversational",
+      "voice_id": "JBFqnCBsd6RMkjVDRZzb",
+      "expressive_mode": true
+    },
+    "turn": {
+      "turn_timeout": 10,
+      "silence_end_call_timeout": 45,
+      "turn_eagerness": "normal"
+    },
+    "conversation": {
+      "text_only": true,
+      "max_duration_seconds": 180,
+      "client_events": [
+        "audio",
+        "interruption",
+        "user_transcript",
+        "agent_response",
+        "client_tool_call"
+      ]
+    }
+  },
+  "platform_settings": {
+    "auth": {
+      "enable_auth": true,
+      "allowlist": [
+        {
+          "hostname": "localhost"
+        },
+        {
+          "hostname": "127.0.0.1"
+        }
+      ]
+    },
+    "call_limits": {
+      "agent_concurrency_limit": 2,
+      "daily_limit": 30,
+      "bursting_enabled": false
+    },
+    "overrides": {
+      "conversation_config_override": {
+        "agent": {
+          "first_message": true
+        },
+        "conversation": {
+          "text_only": true
+        }
+      }
+    }
+  }
+}

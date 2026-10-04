@@ -1,0 +1,82 @@
+{
+  "animations/emotes/awkward": {
+    "horizontal": 1497,
+    "vertical": 2271
+  },
+  "animations/emotes/balance_panic": {
+    "horizontal": 2361,
+    "vertical": 1995
+  },
+  "animations/emotes/buffering_bot": {
+    "horizontal": 1550,
+    "vertical": 1831
+  },
+  "animations/emotes/disco_gnome": {
+    "horizontal": 1495,
+    "vertical": 1832
+  },
+  "animations/emotes/happy_hop": {
+    "horizontal": 1692,
+    "vertical": 2437
+  },
+  "animations/emotes/heel_click_hooray": {
+    "horizontal": 1503,
+    "vertical": 2099
+  },
+  "animations/emotes/look_what_i_earned": {
+    "horizontal": 1462,
+    "vertical": 1830
+  },
+  "animations/emotes/mastered_it": {
+    "horizontal": 1404,
+    "vertical": 1830
+  },
+  "animations/emotes/me_promoted": {
+    "horizontal": 1554,
+    "vertical": 1908
+  },
+  "animations/emotes/nailed_it": {
+    "horizontal": 1390,
+    "vertical": 1830
+  },
+  "animations/emotes/onwards": {
+    "horizontal": 1524,
+    "vertical": 1830
+  },
+  "animations/emotes/overeager_hello": {
+    "horizontal": 1502,
+    "vertical": 1831
+  },
+  "animations/emotes/pebbler_groove": {
+    "horizontal": 1461,
+    "vertical": 1832
+  },
+  "animations/emotes/sideflip_jump": {
+    "horizontal": 2210,
+    "vertical": 2517
+  },
+  "animations/emotes/ta_da": {
+    "horizontal": 1473,
+    "vertical": 1849
+  },
+  "animations/emotes/tiny_tantrum": {
+    "horizontal": 1561,
+    "vertical": 1833
+  },
+  "animations/emotes/very_important_bow": {
+    "horizontal": 1429,
+    "vertical": 1830
+  },
+  "animations/emotes/victory_pump": {
+    "horizontal": 2174,
+    "vertical": 2097
+  },
+  "animations/emotes/who_me": {
+    "horizontal": 1471,
+    "vertical": 1831
+  },
+  "animations/job_complete/job_complete": {
+    "horizontal": 1723,
+    "vertical": 2221
+  }
+}

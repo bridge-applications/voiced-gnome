@@ -1,0 +1,220 @@
+{
+  "name": "Voiced Gnome",
+  "conversation_config": {
+    "agent": {
+      "language": "en",
+      "first_message": "Hello there! I'm a little gnome with a rather large wardrobe. Fancy choosing my next look?",
+      "prompt": {
+        "prompt": "Replaced with agent-prompt.txt by the setup script.",
+        "llm": "gemini-3.8-flash",
+        "temperature": 0.6,
+        "max_tokens": 180,
+        "tools": [
+          {
+            "type": "client",
+            "name": "perform_gesture",
+            "description": "Animate your visible body. Use when asked to wave, dance, bow, celebrate or shrug, or when the gesture naturally fits your reply.",
+            "expects_response": false,
+            "parameters": {
+              "type": "object",
+              "required": ["gesture"],
+              "properties": {
+                "gesture": {
+                  "type": "string",
+                  "enum": ["wave", "celebrate", "bow", "shrug", "dance"],
+                  "description": "The physical gesture to perform."
+                }
+              }
+            }
+          },
+          {
+            "type": "client",
+            "name": "set_expression",
+            "description": "Change your visible facial expression when a reaction naturally fits the conversation. Reset to neutral after a strong reaction.",
+            "expects_response": false,
+            "parameters": {
+              "type": "object",
+              "required": ["expression"],
+              "properties": {
+                "expression": {
+                  "type": "string",
+                  "enum": ["neutral", "happy", "curious", "surprised", "proud"],
+                  "description": "The facial expression to display."
+                }
+              }
+            }
+          },
+          {
+            "type": "client",
+            "name": "get_wardrobe",
+            "description": "Read your currently worn clothing, available complete looks and available individual clothing items. Call before choosing a new look or answering wardrobe questions. The items are the complete supported wardrobe.",
+            "expects_response": true,
+            "response_timeout_secs": 12,
+            "parameters": {
+              "type": "object",
+              "properties": {},
+              "required": []
+            }
+          },
+          {
+            "type": "client",
+            "name": "change_outfit",
+            "description": "Actually change your visible clothing. You can pick a complete named look and/or override individual pieces. Wait for success=true before saying the clothes changed. This also performs a small bow; no separate bow tool is needed. Keep unrelated pieces when a user asks for a single change.",
+            "expects_response": true,
+            "response_timeout_secs": 15,
+            "parameters": {
+              "type": "object",
+              "required": ["look"],
+              "properties": {
+                "look": {
+                  "type": "string",
+                  "enum": [
+                    "custom",
+                    "classic",
+                    "baseball",
+                    "pirate",
+                    "chef",
+                    "worker",
+                    "mail_carrier",
+                    "dragon",
+                    "royal",
+                    "captain",
+                    "cozy"
+                  ],
+                  "description": "Start from this complete look. Use custom for individual changes preserving unspecified current pieces."
+                },
+                "headwear": {
+                  "type": "string",
+                  "enum": [
+                    "powdered_wig",
+                    "blond_hair",
+                    "red_hat",
+                    "baseball_cap",
+                    "pirate_hat",
+                    "chef_hat",
+                    "hard_hat",
+                    "pharaoh_headdress",
+                    "mail_cap",
+                    "dragon_helmet",
+                    "keep",
+                    "none"
+                  ],
+                  "description": "Optional override. Explicit keep retains the currently worn piece even with a new complete look. Omit to use the named look, or retain the current piece for custom. Choices: powdered_wig=Powdered curly wig, blond_hair=Swept blond hair, red_hat=Classic red gnome hat, baseball_cap=Red and white baseball cap, pirate_hat=Pirate tricorn and red bandana, chef_hat=Pirate chef hat, hard_hat=Work hard hat, pharaoh_headdress=Blue and gold Egyptian headdress, mail_cap=Blue mail carrier cap, dragon_helmet=Green dragon helmet"
+                },
+                "glasses": {
+                  "type": "string",
+                  "enum": [
+                    "round_glasses",
+                    "eye_patch",
+                    "gold_sunglasses",
+                    "keep",
+                    "none"
+                  ],
+                  "description": "Optional override. Explicit keep retains the currently worn piece even with a new complete look. Omit to use the named look, or retain the current piece for custom. Choices: round_glasses=Round spectacles, eye_patch=Pirate eye patch, gold_sunglasses=Gold-framed sunglasses"
+                },
+                "shirt": {
+                  "type": "string",
+                  "enum": [
+                    "safety_vest",
+                    "checked_shirt",
+                    "blue_shirt",
+                    "baseball_shirt",
+                    "pirate_jacket",
+                    "chef_coat",
+                    "work_jacket",
+                    "egyptian_collar",
+                    "egyptian_tunic",
+                    "mail_uniform",
+                    "dragon_armor",
+                    "royal_tunic",
+                    "captain_jacket",
+                    "fur_coat",
+                    "keep"
+                  ],
+                  "description": "Optional override. Explicit keep retains the currently worn piece even with a new complete look. Omit to use the named look, or retain the current piece for custom. Choices: safety_vest=Orange reflective safety vest, checked_shirt=Blue checked shirt, blue_shirt=Plain blue shirt, baseball_shirt=Baseball shirt, pirate_jacket=Pirate jacket, chef_coat=Pirate chef coat, work_jacket=Work jacket, egyptian_collar=Egyptian collar, egyptian_tunic=Egyptian tunic, mail_uniform=Mail carrier uniform, dragon_armor=Green dragon armor, royal_tunic=Royal gold tunic, captain_jacket=Purple and gold captain jacket, fur_coat=White fur coat"
+                },
+                "pants": {
+                  "type": "string",
+                  "enum": [
+                    "patchwork_shorts",
+                    "work_trousers",
+                    "classic_trousers",
+                    "baseball_trousers",
+                    "pirate_trousers",
+                    "chef_trousers",
+                    "worker_trousers",
+                    "egyptian_farmer",
+                    "egyptian_guard",
+                    "mail_trousers",
+                    "keep"
+                  ],
+                  "description": "Optional override. Explicit keep retains the currently worn piece even with a new complete look. Omit to use the named look, or retain the current piece for custom. Choices: patchwork_shorts=Patchwork shorts, work_trousers=Work trousers, classic_trousers=Classic trousers, baseball_trousers=Baseball trousers, pirate_trousers=Pirate trousers, chef_trousers=Chef trousers, worker_trousers=Worker trousers, egyptian_farmer=Egyptian farmer clothing, egyptian_guard=Egyptian guard clothing, mail_trousers=Mail carrier trousers"
+                },
+                "footwear": {
+                  "type": "string",
+                  "enum": [
+                    "red_boots",
+                    "work_boots",
+                    "classic_shoes",
+                    "baseball_shoes",
+                    "pirate_boots",
+                    "worker_boots",
+                    "mail_shoes",
+                    "dragon_boots",
+                    "keep"
+                  ],
+                  "description": "Optional override. Explicit keep retains the currently worn piece even with a new complete look. Omit to use the named look, or retain the current piece for custom. Choices: red_boots=Classic red boots, work_boots=Work boots, classic_shoes=Classic shoes, baseball_shoes=Baseball shoes, pirate_boots=Pirate boots, worker_boots=Worker boots, mail_shoes=Mail carrier shoes, dragon_boots=Dragon claw boots"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "tts": {
+      "model_id": "eleven_v3_conversational",
+      "voice_id": "JBFqnCBsd6RMkjVDRZzb",
+      "speed": 1.0,
+      "expressive_mode": true
+    },
+    "asr": {
+      "provider": "scribe_realtime",
+      "quality": "high"
+    },
+    "turn": {
+      "turn_eagerness": "normal",
+      "turn_model": "turn_v3",
+      "turn_timeout": 10,
+      "silence_end_call_timeout": 45
+    },
+    "conversation": {
+      "max_duration_seconds": 180,
+      "client_events": [
+        "audio",
+        "user_transcript",
+        "agent_response",
+        "agent_response_correction",
+        "interruption",
+        "client_tool_call"
+      ]
+    }
+  },
+  "platform_settings": {
+    "auth": {
+      "enable_auth": true,
+      "allowlist": [
+        {
+          "hostname": "localhost"
+        },
+        {
+          "hostname": "127.0.0.1"
+        }
+      ]
+    },
+    "call_limits": {
+      "agent_concurrency_limit": 2,
+      "daily_limit": 30,
+      "bursting_enabled": false
+    }
+  }
+}

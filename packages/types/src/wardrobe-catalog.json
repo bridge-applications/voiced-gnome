@@ -1,0 +1,376 @@
+{
+  "items": {
+    "headwear": {
+      "powdered_wig": {
+        "label": "Powdered curly wig",
+        "skin": "headwear/headwear_006"
+      },
+      "blond_hair": {
+        "label": "Swept blond hair",
+        "skin": "headwear/headwear_010"
+      },
+      "red_hat": {
+        "label": "Classic red gnome hat",
+        "skin": "headwear/headwear_011"
+      },
+      "baseball_cap": {
+        "label": "Red and white baseball cap",
+        "skin": "headwear/headwear_012"
+      },
+      "pirate_hat": {
+        "label": "Pirate tricorn and red bandana",
+        "skin": "headwear/headwear_013"
+      },
+      "chef_hat": {
+        "label": "Pirate chef hat",
+        "skin": "headwear/headwear_014"
+      },
+      "hard_hat": {
+        "label": "Work hard hat",
+        "skin": "headwear/headwear_015"
+      },
+      "pharaoh_headdress": {
+        "label": "Blue and gold Egyptian headdress",
+        "skin": "headwear/headwear_016"
+      },
+      "mail_cap": {
+        "label": "Blue mail carrier cap",
+        "skin": "headwear/headwear_017"
+      },
+      "dragon_helmet": {
+        "label": "Green dragon helmet",
+        "skin": "headwear/headwear_018"
+      }
+    },
+    "glasses": {
+      "round_glasses": {
+        "label": "Round spectacles",
+        "skin": "glasses/glasses_001"
+      },
+      "eye_patch": {
+        "label": "Pirate eye patch",
+        "skin": "glasses/glasses_002"
+      },
+      "gold_sunglasses": {
+        "label": "Gold-framed sunglasses",
+        "skin": "glasses/glasses_003"
+      }
+    },
+    "shirt": {
+      "safety_vest": {
+        "label": "Orange reflective safety vest",
+        "skin": "shirts/shirt_002"
+      },
+      "checked_shirt": {
+        "label": "Blue checked shirt",
+        "skin": "shirts/shirt_003"
+      },
+      "blue_shirt": {
+        "label": "Plain blue shirt",
+        "skin": "shirts/shirt_005"
+      },
+      "baseball_shirt": {
+        "label": "Baseball shirt",
+        "skin": "shirts/shirt_006"
+      },
+      "pirate_jacket": {
+        "label": "Pirate jacket",
+        "skin": "shirts/shirt_007"
+      },
+      "chef_coat": {
+        "label": "Pirate chef coat",
+        "skin": "shirts/shirt_008"
+      },
+      "work_jacket": {
+        "label": "Work jacket",
+        "skin": "shirts/shirt_009"
+      },
+      "egyptian_collar": {
+        "label": "Egyptian collar",
+        "skin": "shirts/shirt_010"
+      },
+      "egyptian_tunic": {
+        "label": "Egyptian tunic",
+        "skin": "shirts/shirt_011"
+      },
+      "mail_uniform": {
+        "label": "Mail carrier uniform",
+        "skin": "shirts/shirt_012"
+      },
+      "dragon_armor": {
+        "label": "Green dragon armor",
+        "skin": "shirts/shirt_013"
+      },
+      "royal_tunic": {
+        "label": "Royal gold tunic",
+        "skin": "shirts/shirt_014"
+      },
+      "captain_jacket": {
+        "label": "Purple and gold captain jacket",
+        "skin": "shirts/shirt_015"
+      },
+      "fur_coat": {
+        "label": "White fur coat",
+        "skin": "shirts/shirt_016"
+      }
+    },
+    "pants": {
+      "patchwork_shorts": {
+        "label": "Patchwork shorts",
+        "skin": "pants/pants_001"
+      },
+      "work_trousers": {
+        "label": "Work trousers",
+        "skin": "pants/pants_002"
+      },
+      "classic_trousers": {
+        "label": "Classic trousers",
+        "skin": "pants/pants_004"
+      },
+      "baseball_trousers": {
+        "label": "Baseball trousers",
+        "skin": "pants/pants_005"
+      },
+      "pirate_trousers": {
+        "label": "Pirate trousers",
+        "skin": "pants/pants_006"
+      },
+      "chef_trousers": {
+        "label": "Chef trousers",
+        "skin": "pants/pants_007"
+      },
+      "worker_trousers": {
+        "label": "Worker trousers",
+        "skin": "pants/pants_008"
+      },
+      "egyptian_farmer": {
+        "label": "Egyptian farmer clothing",
+        "skin": "pants/pants_009"
+      },
+      "egyptian_guard": {
+        "label": "Egyptian guard clothing",
+        "skin": "pants/pants_010"
+      },
+      "mail_trousers": {
+        "label": "Mail carrier trousers",
+        "skin": "pants/pants_011"
+      }
+    },
+    "footwear": {
+      "red_boots": {
+        "label": "Classic red boots",
+        "skin": "footwear/footwear_001"
+      },
+      "work_boots": {
+        "label": "Work boots",
+        "skin": "footwear/footwear_002"
+      },
+      "classic_shoes": {
+        "label": "Classic shoes",
+        "skin": "footwear/footwear_004"
+      },
+      "baseball_shoes": {
+        "label": "Baseball shoes",
+        "skin": "footwear/footwear_005"
+      },
+      "pirate_boots": {
+        "label": "Pirate boots",
+        "skin": "footwear/footwear_006"
+      },
+      "worker_boots": {
+        "label": "Worker boots",
+        "skin": "footwear/footwear_007"
+      },
+      "mail_shoes": {
+        "label": "Mail carrier shoes",
+        "skin": "footwear/footwear_008"
+      },
+      "dragon_boots": {
+        "label": "Dragon claw boots",
+        "skin": "footwear/footwear_009"
+      }
+    }
+  },
+  "looks": {
+    "classic": {
+      "label": "Garden gnome",
+      "outfit": {
+        "headwear": "red_hat",
+        "shirt": "blue_shirt",
+        "pants": "patchwork_shorts",
+        "footwear": "red_boots",
+        "glasses": null
+      }
+    },
+    "baseball": {
+      "label": "Baseball",
+      "outfit": {
+        "headwear": "baseball_cap",
+        "shirt": "baseball_shirt",
+        "pants": "baseball_trousers",
+        "footwear": "baseball_shoes",
+        "glasses": null
+      }
+    },
+    "pirate": {
+      "label": "Pirate",
+      "outfit": {
+        "headwear": "pirate_hat",
+        "shirt": "pirate_jacket",
+        "pants": "pirate_trousers",
+        "footwear": "pirate_boots",
+        "glasses": null
+      }
+    },
+    "chef": {
+      "label": "Pirate chef",
+      "outfit": {
+        "headwear": "chef_hat",
+        "shirt": "chef_coat",
+        "pants": "chef_trousers",
+        "footwear": "pirate_boots",
+        "glasses": null
+      }
+    },
+    "worker": {
+      "label": "Worker",
+      "outfit": {
+        "headwear": "hard_hat",
+        "shirt": "work_jacket",
+        "pants": "worker_trousers",
+        "footwear": "worker_boots",
+        "glasses": null
+      }
+    },
+    "mail_carrier": {
+      "label": "Mail carrier",
+      "outfit": {
+        "headwear": "mail_cap",
+        "shirt": "mail_uniform",
+        "pants": "mail_trousers",
+        "footwear": "mail_shoes",
+        "glasses": null
+      }
+    },
+    "dragon": {
+      "label": "Dragon",
+      "outfit": {
+        "headwear": "dragon_helmet",
+        "shirt": "dragon_armor",
+        "pants": "pirate_trousers",
+        "footwear": "dragon_boots",
+        "glasses": null
+      }
+    },
+    "royal": {
+      "label": "Royal",
+      "outfit": {
+        "headwear": "powdered_wig",
+        "shirt": "royal_tunic",
+        "pants": "classic_trousers",
+        "footwear": "classic_shoes",
+        "glasses": "gold_sunglasses"
+      }
+    },
+    "captain": {
+      "label": "Captain",
+      "outfit": {
+        "headwear": "pirate_hat",
+        "shirt": "captain_jacket",
+        "pants": "pirate_trousers",
+        "footwear": "pirate_boots",
+        "glasses": null
+      }
+    },
+    "cozy": {
+      "label": "Winter coat",
+      "outfit": {
+        "headwear": "red_hat",
+        "shirt": "fur_coat",
+        "pants": "classic_trousers",
+        "footwear": "classic_shoes",
+        "glasses": null
+      }
+    },
+    "farmer": {
+      "label": "River farmer",
+      "outfit": {
+        "headwear": null,
+        "shirt": "egyptian_collar",
+        "pants": "egyptian_farmer",
+        "footwear": "classic_shoes",
+        "glasses": null
+      }
+    },
+    "guard": {
+      "label": "Tomb guardian",
+      "outfit": {
+        "headwear": "pharaoh_headdress",
+        "shirt": "egyptian_tunic",
+        "pants": "egyptian_guard",
+        "footwear": "classic_shoes",
+        "glasses": null
+      }
+    },
+    "builder": {
+      "label": "Builder",
+      "outfit": {
+        "headwear": "hard_hat",
+        "shirt": "safety_vest",
+        "pants": "work_trousers",
+        "footwear": "work_boots",
+        "glasses": null
+      }
+    },
+    "scholar": {
+      "label": "Scholar",
+      "outfit": {
+        "headwear": "powdered_wig",
+        "shirt": "checked_shirt",
+        "pants": "classic_trousers",
+        "footwear": "classic_shoes",
+        "glasses": "round_glasses"
+      }
+    },
+    "deckhand": {
+      "label": "Deckhand",
+      "outfit": {
+        "headwear": null,
+        "shirt": "checked_shirt",
+        "pants": "pirate_trousers",
+        "footwear": "pirate_boots",
+        "glasses": "eye_patch"
+      }
+    },
+    "lemonade": {
+      "label": "Lemonade maker",
+      "outfit": {
+        "headwear": "blond_hair",
+        "shirt": "blue_shirt",
+        "pants": "patchwork_shorts",
+        "footwear": "red_boots",
+        "glasses": null
+      }
+    },
+    "inventor": {
+      "label": "Inventor",
+      "outfit": {
+        "headwear": "blond_hair",
+        "shirt": "work_jacket",
+        "pants": "work_trousers",
+        "footwear": "work_boots",
+        "glasses": "round_glasses"
+      }
+    },
+    "ranger": {
+      "label": "Trail ranger",
+      "outfit": {
+        "headwear": "red_hat",
+        "shirt": "safety_vest",
+        "pants": "worker_trousers",
+        "footwear": "worker_boots",
+        "glasses": "gold_sunglasses"
+      }
+    }
+  }
+}

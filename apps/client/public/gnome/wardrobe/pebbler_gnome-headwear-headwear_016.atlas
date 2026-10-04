@@ -1,0 +1,14 @@
+pebbler_gnome-headwear-headwear_016-0.png
+size:1666,813
+filter:Linear,Linear
+pma:true
+equipment/headwear/headwear_016/headwear_016
+bounds:2,2,809,830
+offsets:0,0,809,830
+rotate:90
+index:0
+equipment/headwear/headwear_016/headwear_016_back
+bounds:834,2,809,830
+offsets:0,0,809,830
+rotate:90
+index:0
