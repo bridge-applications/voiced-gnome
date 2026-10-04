@@ -156,7 +156,8 @@ describe('real wardrobe skins on the animated rig', () => {
     const count = vi.mocked(Assets.load).mock.calls.length;
     await load(OUTFIT_LOOKS.dragon.outfit);
     expect(vi.mocked(Assets.load).mock.calls.length).toBe(count);
-  });
+    // Exhaustive rig/wardrobe poses take about 11s on the shared CI runner.
+  }, 30000);
   it('retries failed loads without replacing the existing skeleton skin', async () => {
     const data = createData();
     const load = createWardrobeLoader(data);
