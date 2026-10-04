@@ -15,7 +15,7 @@
   "vars": {
     "DEMO_ENABLED": "true",
     "DEMO_ENVIRONMENT": "production",
-    "TURNSTILE_SITE_KEY": "",
+    "TURNSTILE_SITE_KEY": "0x4AAAAAAFNMGRf2bkf5qrtk",
     "DEMO_DAILY_CONVERSATIONS": "60",
     "DEMO_DAILY_TTS_CHARACTERS": "20000",
     "ALLOWED_ORIGINS": "https://tesselpunt.com",
