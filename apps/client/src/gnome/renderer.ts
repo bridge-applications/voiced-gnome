@@ -1,3 +1,5 @@
+// Use Pixi's precompiled shader/uniform handlers under the production CSP.
+import 'pixi.js/unsafe-eval';
 import { assetUrl } from '../assetUrl';
 import { characterScale } from './framing';
 import { carouselPose, carouselMoves, interpolatePose } from './carousel';
